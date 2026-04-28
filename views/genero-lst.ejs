@@ -1,0 +1,37 @@
+<%- include('cabecalho.ejs')%>
+
+    <main class="container">
+        <div class="page-header">
+            <h2>Lista de Gêneros cinematográficos</h2>
+            <a href="/genero/cadastro" class="btn btn-success">+ Novo Gênero</a>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Filmes Relacionados</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Comédia</td>
+                        <td>Obras cinematográficas focadas em humor, situações exageradas e personagens excêntricos com o objetivo principal de divertir e provocar o riso.</td>
+                        <td><a href="/filme/Panico" class="link">Todo Mundo em Pânico</a>, <a href="/filme/Branquelas" class="link">As Branquelas</a></td>
+                        <td><a href="/genero/Comedia" class="link">Ver Detalhes</a></td>
+                    </tr>
+                    <tr>
+                        <td>Terror</td>
+                        <td>Obras cinematográficas focadas em provocar sensações de medo, tensão, inquietação e susto no espectador, ele explora temas sombrios, tabus, e medos universais.</td>
+                        <td><a href="/filme/Halloween" class="link">Halloween</a></td>
+                        <td><a href="/genero/Terror" class="link">Ver Detalhes</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+<%- include('rodape.ejs')%>

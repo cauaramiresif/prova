@@ -1,0 +1,51 @@
+<%- include('cabecalho.ejs')%>
+
+    <main class="container">
+        <div class="page-header">
+            <h2>Lista de Filmes</h2>
+            <a href="/filme/cadastro" class="btn btn-success">+ Novo Filme</a>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Duração</th>
+                        <th>Classificação Indicativa</th>
+                        <th>Ano de Estreia</th>
+                        <th>Gênero</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Todo Mundo em Pânico</td>
+                        <td>88 Minutos</td>
+                        <td>A16</td>
+                        <td>2000</td>
+                        <td><a href="/genero/Comedia" class="link">Comédia</a></td>
+                        <td><a href="/filme/Panico" class="link">Ver Detalhes</a></td>
+                    </tr>
+                    <tr>
+                        <td>As Branquelas</td>
+                        <td>109 Minutos</td>
+                        <td>A12</td>
+                        <td>2004</td>
+                        <td><a href="/genero/Comedia" class="link">Comédia</a></td>
+                        <td><a href="/filme/Branquelas" class="link">Ver Detalhes</a></td>
+                    </tr>
+                    <tr>
+                        <td>Halloween</td>
+                        <td>91 Minutos</td>
+                        <td>A16</td>
+                        <td>1978</td>
+                        <td><a href="/genero/Terror" class="link">Terror</a></td>
+                        <td><a href="/filme/Halloween" class="link">Ver Detalhes</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+<%- include('rodape.ejs')%>

@@ -1,0 +1,36 @@
+ <%- include('cabecalho.ejs')%>
+ <main class="container">
+        <a href="/filme" class="back-link">← Voltar para lista</a>
+
+        <div class="detail-box">
+            <h2>Detalhes do Filme</h2>
+            
+            <div class="detail-item">
+                <label>Título:</label>
+                <p><%=titulo%></p>
+            </div>
+            
+            <div class="detail-item">
+                <label>Duração:</label>
+                <p><%=duracao%> minutos</p>
+            </div>
+            
+            <div class="detail-item">
+                <label>Classificação Indicativa:</label>
+                <p>A<%=classificacao_indicativa%></p>
+            </div>
+
+            <div class="detail-item">
+                <label>Ano de Estreia:</label>
+                <p><%=ano%></p>
+            </div>
+        </div>
+
+        <div class="detail-box">
+            <h3>Gênero deste Filme</h3>
+            <ul class="musicas-list">
+                <li><a href="/genero/<%=genero%>" class="link"><%=genero%></a></li>
+            </ul>
+        </div>
+    </main>
+<%- include('rodape.ejs')%>
